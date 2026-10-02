@@ -73,5 +73,18 @@
     <button class="button" onclick="location.href='lastpage.html'">
       Last page
     </button>
+    <script src="js/survey.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var continueButton = document.querySelector(".button");
+
+        if (continueButton) {
+          continueButton.addEventListener("click", function () {
+            var selectedActivities = window.valentineSurvey.getCheckedValues("activities");
+            window.valentineSurvey.setValue("activities", selectedActivities.length ? selectedActivities : ["None selected"]);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

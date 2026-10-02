@@ -50,5 +50,18 @@
     <button class="button" onclick="location.href='activities.html'">
       Continue UWU
     </button>
+    <script src="js/survey.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var continueButton = document.querySelector(".button");
+
+        if (continueButton) {
+          continueButton.addEventListener("click", function () {
+            var selectedDessert = window.valentineSurvey.getCheckedValues("dessert");
+            window.valentineSurvey.setValue("dessert", selectedDessert.length ? selectedDessert : ["None selected"]);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

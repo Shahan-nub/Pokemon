@@ -17,5 +17,37 @@
         </button>
       </div>
     </form>
+
+    <div
+      class="tenor-gif-embed"
+      data-postid="13575843492855485359"
+      data-share-method="host"
+      data-aspect-ratio="1.34595"
+      data-width="100%"
+    >
+      <a
+        href="https://tenor.com/view/anipoke-pokemon-pikachu-pikachu-happy-gif-13575843492855485359"
+        >Anipoke Pokemon GIF</a
+      >
+      from
+      <a href="https://tenor.com/search/anipoke-gifs">Anipoke GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="js/survey.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dateInput = document.querySelector('input[type="date"]');
+        var submitButton = document.querySelector(".button");
+
+        if (submitButton) {
+          submitButton.addEventListener("click", function () {
+            window.valentineSurvey.setValue(
+              "date",
+              dateInput && dateInput.value ? dateInput.value : "Not selected"
+            );
+          });
+        }
+      });
+    </script>
   </body>
 </html>

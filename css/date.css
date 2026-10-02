@@ -1,14 +1,20 @@
 body {
   text-align: center;
-  margin-top: 30px;
-  font-family: "Courier";
-  background-color: #fff5e4;
-  color: #ff9494;
+  margin: 0;
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: "Courier", monospace;
+  background: linear-gradient(135deg, #f7e9dc 0%, #f1d9c7 100%);
+  color: #7d1f1f;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 h1 {
-  font-size: 40px;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+  color: #8b1e1e;
 }
 
 form .header {
@@ -16,7 +22,7 @@ form .header {
   display: flex;
   font-size: 20px;
   margin-bottom: 20px;
-  color: #ff9494;
+  color: #8b1e1e;
 }
 
 .form-group {
@@ -24,37 +30,57 @@ form .header {
   flex-direction: column;
   justify-content: center;
   font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .button {
-  padding: 6px 10px;
+  padding: 10px 18px;
   font-size: 15px;
   cursor: pointer;
   margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
+  font-family: "Courier", monospace;
+  background-color: #f9efe6;
+  color: #8f1d1d;
   border-radius: 12px;
-  border: 2px solid #ffe3e1;
-  transition: 0.3s;
+  border: 2px solid #d65b5b;
+  transition: 0.3s ease;
 }
 
 .button:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
+  background-color: #b33b3b;
+  color: #fff7f0;
+  border-color: #8f1d1d;
 }
 
 input[type="date"] {
-  padding: 6px 10px;
+  padding: 8px 12px;
   font-size: 15px;
   cursor: pointer;
   margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
+  font-family: "Courier", monospace;
+  background-color: #f9efe6;
+  color: #8f1d1d;
   border-radius: 12px;
-  border: 2px solid #ffe3e1;
+  border: 2px solid #d65b5b;
+}
+
+.tenor-gif-embed {
+  display: block;
+  width: 50vw;
+  max-width: 420px;
+  min-width: 220px;
+  margin: 10px auto 0;
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(120, 33, 33, 0.12);
+}
+
+.tenor-gif-embed a {
+  color: #8b1e1e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tenor-gif-embed a:hover {
+  text-decoration: underline;
 }
